@@ -1,8 +1,4 @@
 !
-event-handler dhclient
-   trigger on-boot
-   action bash sudo /mnt/flash/initialize_ma1.sh
-!
 aaa authorization exec default local
 !
 aaa root secret 0 vagrant
