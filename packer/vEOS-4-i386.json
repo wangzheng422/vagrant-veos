@@ -39,7 +39,7 @@
           "ssh_password": "admin",
           "vboxmanage": [
               [ "modifyvm","{{.Name}}","--memory","{{user `ram`}}" ],
-              [ "modifyvm","{{.Name}}","--cpus","1" ],
+              [ "modifyvm","{{.Name}}","--cpus","2" ],
               [ "storageattach","{{.Name}}","--storagectl","IDE","--port","1","--device","0","--type","dvddrive","--medium","source/Aboot-vEOS.iso" ],
               [ "modifyvm","{{.Name}}","--nic1","nat" ],
               [ "modifyvm","{{.Name}}","--nicpromisc1","allow-all" ],
