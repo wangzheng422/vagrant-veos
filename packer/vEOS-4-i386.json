@@ -2,7 +2,7 @@
    "variables": {
       "version": "Unknown",
       "ram": "2048",
-      "boot_time":"20m30s"
+      "boot_time":"5m30s"
    },
    "post-processors": [
      {
