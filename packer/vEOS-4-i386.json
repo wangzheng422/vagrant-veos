@@ -23,7 +23,6 @@
             "aaa authorization exec default local<enter>",
             "aaa root secret arista<enter>",
             "username admin privilege 15 role network-admin secret admin<enter>",
-            "exit<enter><wait>",
             "<exit>"
           ],
           "type": "virtualbox-ovf",
