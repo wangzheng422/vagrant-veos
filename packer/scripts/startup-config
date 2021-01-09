@@ -6,8 +6,8 @@ aaa root secret 0 vagrant
 username admin privilege 15 role network-admin secret 0 admin
 username vagrant privilege 15 role network-admin secret 0 vagrant
 !
-interface ma1
-   ip addr dhcp
+interface Management1
+   ip address dhcp
 !
 no ip routing
 !
