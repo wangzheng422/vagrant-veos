@@ -20,10 +20,12 @@
             "bash<enter><wait>",
             "sudo dhclient ma1<enter><wait>",
             "exit<enter><wait>",
-            "conf<enter>",
-            "aaa authorization exec default local<enter>",
-            "aaa root secret arista<enter>",
-            "username admin privilege 15 role network-admin secret admin<enter>",
+            "conf<enter><wait>",
+            "aaa authorization exec default local<enter><wait>",
+            "aaa root secret arista<enter><wait>",
+            "username admin privilege 15 role network-admin secret admin<enter><wait>",
+            "exit<enter><wait>",
+            "copy running-config startup-config<enter><wait>",
             "<exit>"
           ],
           "type": "virtualbox-ovf",
@@ -68,21 +70,6 @@
        {
            "source": "scripts/initialize_ma1.sh",
            "destination": "/mnt/flash/initialize_ma1.sh",
-           "type": "file"
-       },
-       {
-           "source": "scripts/startup-config",
-           "destination": "/mnt/flash/startup-config",
-           "type": "file"
-       },
-       {
-           "source": "scripts/authorized_keys",
-           "destination": "/mnt/flash/authorized_keys",
-           "type": "file"
-       },
-       {
-           "source": "scripts/rc.eos",
-           "destination": "/mnt/flash/rc.eos",
            "type": "file"
        }
    ]
