@@ -20,6 +20,7 @@
             "bash<enter><wait>",
             "sudo dhclient ma1<enter><wait>",
             "exit<enter><wait>",
+            "conf<enter>",
             "aaa authorization exec default local<enter>",
             "aaa root secret arista<enter>",
             "username admin privilege 15 role network-admin secret admin<enter>",
