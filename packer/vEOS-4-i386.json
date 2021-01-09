@@ -17,13 +17,15 @@
           "boot_command" : [
             "admin<enter><wait>",
             "en<enter><wait>",
-            "bash<enter><wait>",
-            "sudo dhclient ma1<enter><wait>",
+            "conf<enter><wait>",
+            "int ma1<enter><wait>",
+            "ip addr dhcp<enter><wait>",
             "exit<enter><wait>",
-            "conf<enter>",
             "aaa authorization exec default local<enter>",
             "aaa root secret arista<enter>",
             "username admin privilege 15 role network-admin secret admin<enter>",
+            "exit<enter><wait>",
+            "copy running-config startup-config<enter><wait>",
             "<exit>"
           ],
           "type": "virtualbox-ovf",
